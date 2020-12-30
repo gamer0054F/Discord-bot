@@ -12,6 +12,7 @@ bot.on('message', message =>{
     if(message.author.id != "793535729770037288" && message.channel.id != "781872678352191568"){
         if(msg.startsWith('!', 0)){
             if(msg === prefix + "rank" && message.channel.id != "781872678352191568"){
+                message.delete();
                 message.channel.send(sender + "please use #rank-check ") // Sends a message to the channel, with the content
             }
            
